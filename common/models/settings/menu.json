@@ -1,0 +1,36 @@
+[
+  {
+    "header": "Excellerify Tracker"
+  },
+  {
+    "href": "/",
+    "title": "Home",
+    "icon": "home"
+  },
+  {
+    "href": "/crud/devices",
+    "title": "Devices",
+    "icon": "phone"
+  },
+  {
+    "divider": true
+  },
+  {
+    "header": "System"
+  },
+  {
+    "href": "/crud/admins",
+    "title": "Admin",
+    "icon": "perm_identity"
+  },
+  {
+    "href": "/crud/settings/edit",
+    "title": "Settings",
+    "icon": "settings"
+  },
+  {
+    "href": "/logout",
+    "icon": "lock",
+    "title": "Logout"
+  }
+]

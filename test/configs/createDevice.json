@@ -1,0 +1,14 @@
+[{
+  "scenario": "Register new device",
+  "testCase": [{
+    "method": "POST",
+    "model": "devices",
+    "withData": {
+      "deviceId": "ABCDE",
+      "deviceInfo": {
+        "userAgent": "firefox"
+      }
+    },
+    "expect": 200
+  }]
+}]

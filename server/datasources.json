@@ -1,0 +1,16 @@
+{
+  "mainDS": {
+    "name": "mainDS",
+    "connector": "postgresql"
+  },
+  "fileDS": {
+    "name": "fileDS",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storage"
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "connector": "mail"
+  }
+}

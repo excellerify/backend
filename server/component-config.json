@@ -1,0 +1,21 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true
+  },
+  "loopback3-xtotalcount": {
+    "pattern": ["*.find"]
+  },
+  "loopback-graphql-server": {
+    "path": "/graphql",
+    "graphiqlPath": "/graphiql",
+    "subscriptionServer": {
+      "disable": true,
+      "port": 3001,
+      "options": {},
+      "socketOptions": {}
+    },
+    "modelMutationGroups": true,
+    "modelQueryGroups": true
+  }
+}

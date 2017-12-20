@@ -1,0 +1,25 @@
+{
+  "model": {},
+  "fields": {
+    "xenditApiKey": {
+      "label": "Xendit API key",
+      "type": "string",
+      "required": true
+    },
+    "twillioPhoneNumber": {
+      "label": "Twillio Phone Number",
+      "type": "string",
+      "required": true
+    },
+    "twillioSID": {
+      "label": "Twillio SID",
+      "type": "string",
+      "required": true
+    },
+    "twillioToken": {
+      "label": "Twillio Token",
+      "type": "string",
+      "required": true
+    }
+  }
+}

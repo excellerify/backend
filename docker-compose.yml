@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: ${EXCELLERIFY_DB_PASSWORD}
+      POSTGRES_USER: ${EXCELLERIFY_DB_USER}
+      POSTGRES_DB: ${EXCELLERIFY_DB}
+    ports:
+      - ${EXCELLERIFY_DB_PORT}:5432

@@ -1,0 +1,48 @@
+{
+  "name": "settings",
+  "base": "PersistedModel",
+  "plural": "settings",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "CrudGrid": {
+      "form": true,
+      "grid": false
+    }
+  },
+  "properties": {
+    "xenditApiKey": {
+      "type": "string",
+      "required": true
+    },
+    "twillioPhoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "twillioSID": {
+      "type": "string",
+      "required": true
+    },
+    "twillioToken": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "getMenu": {
+      "http": {
+        "verb": "get",
+        "path": "/menu"
+      },
+      "returns": {
+        "root": true,
+        "type": "array"
+      }
+    }
+  }
+}

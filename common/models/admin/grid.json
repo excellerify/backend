@@ -1,0 +1,51 @@
+{
+  "options": {
+    "create": true,
+    "update": true,
+    "delete": true,
+    "lock": true,
+    "view": true,
+    "custom": {
+      "icon": "vpn_key",
+      "type": "form",
+      "formUrl": "/users/changePassword"
+    }
+  },
+  "filters": {
+    "model": {
+      "email": "",
+      "username": ""
+    },
+    "fields": {
+      "mobileNumber": {
+        "label": "Mobile Number",
+        "type": "string"
+      },
+      "name": {
+        "label": "Name",
+        "type": "string"
+      }
+    },
+    "rules": {}
+  },
+  "columns": [
+    {
+      "text": "Name",
+      "value": "firstName",
+      "type": "string",
+      "align": "left"
+    },
+    {
+      "text": "Email",
+      "value": "email",
+      "type": "string",
+      "align": "left"
+    },
+    {
+      "text": "Is Active",
+      "value": "status",
+      "type": "string",
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "options": {
+    "view": true
+  },
+  "filters": {
+    "model": {
+    },
+    "fields": {
+      "mobileNumber": {
+        "label": "Mobile Number",
+        "type": "string"
+      }
+    },
+    "rules": {}
+  },
+  "columns": [
+    {
+      "text": "id",
+      "value": "Id",
+      "type": "string",
+      "align": "left"
+    },
+    {
+      "text": "Message",
+      "value": "message",
+      "type": "string",
+      "align": "left"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "inline": true,
+  "model": {
+    "status": false
+  },
+  "fields": {
+    "name": {
+      "label": "Name",
+      "type": "string",
+      "required": true
+    },
+    "mobileNumber": {
+      "label": "Phone Number",
+      "type": "string",
+      "required": true
+    },
+    "accessCode": {
+      "label": "Access Code",
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "label": "Email",
+      "required": true,
+      "type": "email"
+    },
+    "address": {
+      "label": "Address",
+      "type": "string",
+      "required": false
+    },
+    "city": {
+      "label": "City",
+      "type": "string",
+      "required": false
+    },
+    "payoutBankName": {
+      "label": "Payout Bank Name",
+      "type": "string",
+      "required": false
+    },
+    "payoutBankCode": {
+      "label": "Payout Bank Code",
+      "type": "string",
+      "required": false
+    },
+    "payoutBankAccount": {
+      "label": "Payout Bank Account",
+      "type": "string",
+      "required": false
+    },
+    "photos": {
+      "label": "Photo",
+      "type": "file"
+    },
+    "status": {
+      "label": "Is Active",
+      "type": "radio",
+      "required": false,
+      "choices":[
+        {"value": true, "text": "Yes"},
+        {"value": false, "text": "No"}
+      ]
+    },
+    "investments": {
+      "label": "Investments",
+      "type": "table",
+      "required": false,
+      "readonly": true,
+      "headers": [
+        { "text": "Product", "field": "productTitle", "align": "left" },
+        { "text": "Total Amount", "field": "amountInvested", "align": "left" }
+      ]
+    },
+    "transactionHistory": {
+      "label": "Transaction History",
+      "type": "table",
+      "required": false,
+      "readonly": true,
+      "headers": [
+        { "text": "Is Paid", "field": "status", "align": "left" },
+        { "text": "Product", "field": "product.title", "align": "left" },
+        { "text": "Amount", "field": "amountInvested", "align": "left" }
+      ]
+    }
+  }
+}
